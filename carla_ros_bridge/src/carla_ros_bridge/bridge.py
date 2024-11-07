@@ -388,8 +388,8 @@ def main(args=None):
     roscomp.on_shutdown(carla_bridge.destroy)
 
     parameters['host'] = carla_bridge.get_param('host', 'localhost')
-    parameters['port'] = carla_bridge.get_param('port', 2000)
-    parameters['timeout'] = carla_bridge.get_param('timeout', 2)
+    parameters['port'] = carla_bridge.get_param('port', 3000)
+    parameters['timeout'] = carla_bridge.get_param('timeout', 10)
     parameters['passive'] = carla_bridge.get_param('passive', False)
     parameters['synchronous_mode'] = carla_bridge.get_param('synchronous_mode', True)
     parameters['synchronous_mode_wait_for_vehicle_control_command'] = carla_bridge.get_param(
